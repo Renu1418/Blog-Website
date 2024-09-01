@@ -1,0 +1,290 @@
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.container{
+   width: 100%;
+    height: 100vh; /* Set the height of  container to 100% of the viewport */
+   
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+  box-sizing: border-box;
+   
+}
+/* welcome screen start */
+.welcome-screen{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.welcome-screen h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 50px;
+    padding: 0 5%; /* percentage for responsive padding */
+}
+
+.welcome-screen p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    font-weight: 500;
+    padding: 25px 10%; 
+    line-height: 1.6; 
+}
+
+.welcome-screen button {
+    padding: 10px 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 20px auto; 
+    display: block; 
+}
+/* left part starting */
+
+
+    
+ /* right part starting */
+.box{
+    border: 2px solid green;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    overflow-y:hidden;
+    
+   
+}
+/* header starting */
+nav{
+  background-color: black;
+  color: white;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  border: 2px solid green;
+  
+}
+
+nav h3{
+    font-family:'Roboto', sans-serif ;
+    font-size: 24px;
+   
+}
+
+.left-part ul{
+        list-style: none;
+        display: flex;
+        gap: 70px;
+}
+
+.left-part li{
+    cursor: pointer;
+    font-family:'Roboto', sans-serif ;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.left-part li:hover {
+        color: pink;
+}
+
+/* Add styles for search container */
+.search-container {
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: 50px; /* Adjust as needed */
+    right: 15px;
+    background: white;
+    padding: 10px;
+    border: 1px solid black;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    height: 95vh;
+}
+
+#search-input {
+    width: 200px; /* Adjust width as needed */
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+#search-close {
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#search-results {
+    margin-top: 10px;
+    max-height: 200px; /* Adjust height as needed */
+    overflow-y: auto;
+}
+/* Slightly different border for results */
+#search-results .post, #search-results .post-second, #search-results .post-third {
+    border: 1px solid #ddd;  /* Slightly different border for results */
+    margin-bottom: 10px;
+    padding: 10px;
+} 
+
+.button{
+    display: flex;
+    gap: 20px;
+    
+}
+
+.signupbtn,.loginbtn{
+   padding: 10px 17px;
+   border-radius: 7px;
+   cursor: pointer;
+   font-family:'Roboto', sans-serif ;
+   font-size: 16px;
+   transition: background-color 0.3s ;
+} 
+
+.signupbtn:hover, .loginbtn:hover{
+   background-color: pink;
+}
+/* header ending */
+
+
+/* main  starting*/
+.main{
+    padding: 0px 110px;
+    margin-top: 50px;
+    height: calc(100vh - 60px);
+    overflow-y: auto; /* Allows scrolling only in the main content area */
+    background-color:white;
+}
+
+
+
+/* applied on post 1, post 2, post 3 */
+
+.post, .post-second, .post-third{
+    background-color:rgb(205, 245, 205);
+    padding: 15px 80px;
+    margin: 30px 0px;
+    border-radius: 7px;
+    
+}
+ /* applied on post 1, post 2, post 3 */
+
+.post img, .post-second img, .post-third img{
+    width: 98%;
+    padding-top: 15px;
+}
+
+/* applied on post 1, post 2, post 3 */
+
+.title{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+}
+
+/* applied on post 1, post 2, post 3 */
+.post-content{
+   padding-top: 10px;
+   font-family: "Roboto", sans-serif;
+   font-style: normal;
+   font-size: 16px;
+   line-height: 26px;
+   font-weight: 500;
+   opacity: 0.6;
+}
+/* applied on post 1, post 2, post 3 */
+.post-date{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    margin-top: 10px;
+    opacity: 0.7;
+    
+}
+/* applied on post 1, post 2, post 3 */
+.comment-section h5{
+    margin-top: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-block;
+   
+   
+}
+
+/* main ending */
+
+
+/* footer start */
+.footer{
+       background-color: black;
+       color: white;
+       text-align: center;
+       padding: 5px;
+       position:absolute ;
+       bottom: 0;
+       width: 100%;
+
+    }
+/* footer end */
+
+
+/* creating the post */
+
+
+.create-post-container {
+    margin: 25px 0px;
+ }
+ 
+ #create-post-btn{
+     padding: 10px 10px;
+     cursor: pointer;
+     background-color: #28a745;
+     border-color: #28a745;
+     font-family: "Roboto", sans-serif;
+     font-weight: 600;
+     font-style: normal;
+     font-size: 14px;
+ }
+ 
+ .create-post-form {
+     margin-top: 20px;
+     padding: 20px;
+     border: 1px solid #ddd;
+     background: #f9f9f9;
+ }
+ 
+ .create-post-form input, .create-post-form textarea {
+     width: 100%;
+     padding: 10px;
+     margin-bottom: 10px;
+     border: 1px solid #ddd;
+     border-radius: 4px;
+ }
+ 
+ .create-post-form button {
+     padding: 10px 15px;
+     border: none;
+     background-color: #28a745;
+     color: white;
+     cursor: pointer;
+     border-radius: 4px;
+ }
+ 
+ .create-post-form button:hover {
+     background-color: #218838;
+ }
+ 
